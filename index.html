@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth bg-[#EFECE6] text-[#121212]">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TORT Interior Design. Premium residential and commercial interior architecture in Ikeja, Lagos. Transforming spaces into living art.">
+    <title>TORT Interior Design | Spatial Curation in Lagos</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind-config.js"></script>
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    <script src="./app.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Cinzel for architectural elegance, Montserrat for modern structure -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="antialiased font-body custom-cursor-active overflow-x-hidden selection:bg-terracotta selection:text-white">
+
+    <div class="arch-cursor hidden lg:block"></div>
+
+    <nav class="fixed w-full z-50 top-0 transition-all duration-500 nav-container px-6 py-6 flex justify-between items-center mix-blend-difference text-white">
+        <a href="#" class="text-3xl font-display font-bold tracking-widest uppercase">
+            TORT.
+        </a>
+        <div class="hidden md:flex gap-12 text-xs uppercase tracking-[0.2em] font-medium">
+            <a href="#philosophy" class="hover:opacity-70 transition-opacity magnetic-el">Philosophy</a>
+            <a href="#portfolio" class="hover:opacity-70 transition-opacity magnetic-el">Spaces</a>
+            <a href="#process" class="hover:opacity-70 transition-opacity magnetic-el">Process</a>
+        </div>
+        <a href="https://wa.me/2348135703348" target="_blank" class="hidden md:block text-xs uppercase tracking-[0.2em] font-bold border-b border-white pb-1 hover:opacity-70 transition-opacity magnetic-el">
+            Consultation
+        </a>
+    </nav>
+
+    <header class="relative w-full min-h-screen flex items-center justify-center overflow-hidden bg-[#121212]" id="home">
+        <!-- Asymmetrical Hero Grid -->
+        <div class="absolute inset-0 z-0 grid grid-cols-1 md:grid-cols-12 h-full w-full">
+            <div class="md:col-span-7 relative h-full overflow-hidden image-mask-reveal">
+                <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=1600" class="w-full h-full object-cover hero-parallax" alt="Luxury Living Room">
+                <div class="absolute inset-0 bg-black/20"></div>
+            </div>
+            <div class="md:col-span-5 relative h-full overflow-hidden hidden md:block image-mask-reveal delay-200">
+                <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&q=80&w=1600" class="w-full h-full object-cover hero-parallax scale-110" alt="Modern Kitchen Detail">
+                <div class="absolute inset-0 bg-terracotta/20 mix-blend-multiply"></div>
+            </div>
+        </div>
+        
+        <div class="relative z-10 w-full max-w-7xl mx-auto px-6 mt-20 md:mt-0 flex flex-col items-start text-white mix-blend-difference pointer-events-none">
+            <div class="overflow-hidden mb-6">
+                <p class="font-body uppercase tracking-[0.3em] text-sm md:text-base font-light hero-text-up">Ikeja / Ketu</p>
+            </div>
+            <div class="overflow-hidden">
+                <h1 class="text-6xl md:text-[8rem] font-display uppercase leading-[0.9] tracking-tight hero-text-up">
+                    Curating
+                </h1>
+            </div>
+            <div class="overflow-hidden mb-10 pl-0 md:pl-32">
+                <h1 class="text-6xl md:text-[8rem] font-display uppercase leading-[0.9] tracking-tight hero-text-up italic">
+                    Dimensions.
+                </h1>
+            </div>
+        </div>
+    </header>
+
+    <main class="bg-[#EFECE6] relative z-20">
+        
+        <!-- Manifesto & 4.8 Star Validation -->
+        <section class="py-32 px-6 md:px-16 max-w-7xl mx-auto" id="philosophy">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-16">
+                <div class="md:col-span-4 flex flex-col justify-between reveal-fade">
+                    <div>
+                        <div class="text-5xl font-display font-bold text-terracotta mb-2">4.8★</div>
+                        <p class="text-sm uppercase tracking-widest text-gray-500 font-bold mb-10">Boutique Excellence</p>
+                    </div>
+                    <div class="w-24 h-[1px] bg-gray-400 mb-8 hidden md:block"></div>
+                </div>
+                <div class="md:col-span-8 reveal-fade">
+                    <h2 class="text-3xl md:text-5xl font-display leading-tight mb-8">
+                        We believe that a space is not merely occupied; it is experienced. Every texture, shadow, and geometric line must serve a psychological purpose.
+                    </h2>
+                    <p class="text-lg text-gray-600 font-light leading-relaxed mb-10 max-w-2xl">
+                        At TORT Interior Design, we operate as a boutique architectural firm. This means our 20+ residential and commercial clients in Lagos receive uncompromising, undivided attention. We don't churn out templates; we engineer bespoke environments that elevate your daily rituals and increase your property's inherent value.
+                    </p>
+                    <a href="https://wa.me/2348135703348" target="_blank" class="inline-flex items-center gap-4 text-sm uppercase tracking-[0.2em] font-bold text-[#121212] hover:text-terracotta transition-colors group pointer-events-auto magnetic-el">
+                        <span>Begin a Dialogue</span>
+                        <span class="w-10 h-[1px] bg-[#121212] group-hover:bg-terracotta transition-colors group-hover:w-16"></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Spatial Grid Portfolio -->
+        <section class="py-32 bg-[#121212] text-white" id="portfolio">
+            <div class="max-w-7xl mx-auto px-6 md:px-16 mb-20 reveal-fade">
+                <h3 class="text-xs uppercase tracking-[0.3em] text-terracotta mb-4">Selected Works</h3>
+                <h2 class="text-5xl font-display uppercase tracking-widest">The Archive.</h2>
+            </div>
+
+            <!-- Asymmetrical CSS Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 px-6 md:px-16 max-w-[100rem] mx-auto">
+                <div class="md:col-span-7 h-[60vh] relative group overflow-hidden reveal-img">
+                    <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=1200" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" alt="Residential Living">
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-10">
+                        <h4 class="text-3xl font-display mb-2">The Ikeja Residence</h4>
+                        <p class="text-sm font-light tracking-widest uppercase">Residential / Complete Overhaul</p>
+                    </div>
+                </div>
+                
+                <div class="md:col-span-5 h-[60vh] relative group overflow-hidden reveal-img md:mt-24">
+                    <img src="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?auto=format&fit=crop&q=80&w=1200" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" alt="Minimalist Kitchen">
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-10">
+                        <h4 class="text-3xl font-display mb-2">Monochrome Culinary</h4>
+                        <p class="text-sm font-light tracking-widest uppercase">Bespoke Joinery / Kitchen</p>
+                    </div>
+                </div>
+
+                <div class="md:col-span-5 h-[60vh] relative group overflow-hidden reveal-img md:-mt-24">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" alt="Commercial Office">
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-10">
+                        <h4 class="text-3xl font-display mb-2">Apex Capital Boardroom</h4>
+                        <p class="text-sm font-light tracking-widest uppercase">Commercial / Workspace</p>
+                    </div>
+                </div>
+
+                <div class="md:col-span-7 h-[60vh] relative group overflow-hidden reveal-img">
+                    <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&q=80&w=1200" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" alt="Luxury Bedroom">
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-10">
+                        <h4 class="text-3xl font-display mb-2">Sanctuary Suite</h4>
+                        <p class="text-sm font-light tracking-widest uppercase">Residential / Master Suite</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Execution Pipeline (B2B Trust Builder) -->
+        <section class="py-32 px-6 md:px-16 max-w-7xl mx-auto border-b border-gray-300" id="process">
+            <div class="text-center mb-24 reveal-fade">
+                <h3 class="text-xs uppercase tracking-[0.3em] text-terracotta mb-4">Methodology</h3>
+                <h2 class="text-5xl font-display uppercase tracking-widest text-[#121212]">The Execution Blueprint.</h2>
+                <p class="mt-6 text-gray-600 font-light max-w-2xl mx-auto">We eliminate the chaos of renovation. Our structured pipeline ensures financial transparency, strict timelines, and flawless execution.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div class="relative reveal-fade">
+                    <div class="text-6xl font-display text-gray-300 absolute -top-10 -left-4 z-0 opacity-50">01</div>
+                    <div class="relative z-10 pt-4 border-t border-[#121212]">
+                        <h4 class="text-xl font-bold uppercase tracking-widest mb-4">Discovery</h4>
+                        <p class="text-sm font-light text-gray-600">Site visitation in Ketu/Ikeja or your location. We assess spatial dynamics, structural constraints, and your lifestyle requirements.</p>
+                    </div>
+                </div>
+                <div class="relative reveal-fade delay-100">
+                    <div class="text-6xl font-display text-gray-300 absolute -top-10 -left-4 z-0 opacity-50">02</div>
+                    <div class="relative z-10 pt-4 border-t border-[#121212]">
+                        <h4 class="text-xl font-bold uppercase tracking-widest mb-4">Conceptualization</h4>
+                        <p class="text-sm font-light text-gray-600">Development of 3D renders, mood boards, material sourcing, and a comprehensive, transparent financial breakdown.</p>
+                    </div>
+                </div>
+                <div class="relative reveal-fade delay-200">
+                    <div class="text-6xl font-display text-gray-300 absolute -top-10 -left-4 z-0 opacity-50">03</div>
+                    <div class="relative z-10 pt-4 border-t border-terracotta">
+                        <h4 class="text-xl font-bold uppercase tracking-widest mb-4 text-terracotta">Procurement</h4>
+                        <p class="text-sm font-light text-gray-600">Sourcing of premium fixtures, bespoke furniture manufacturing, and logistics management directly to site.</p>
+                    </div>
+                </div>
+                <div class="relative reveal-fade delay-300">
+                    <div class="text-6xl font-display text-gray-300 absolute -top-10 -left-4 z-0 opacity-50">04</div>
+                    <div class="relative z-10 pt-4 border-t border-[#121212]">
+                        <h4 class="text-xl font-bold uppercase tracking-widest mb-4">Execution</h4>
+                        <p class="text-sm font-light text-gray-600">Our artisans and project managers transform the blueprint into reality, concluding with a white-glove handover.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-[#121212] pt-32 pb-10 px-6 text-white relative z-20">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-16 mb-24">
+            <div class="md:col-span-6">
+                <h4 class="text-6xl font-display uppercase tracking-widest mb-8">TORT.</h4>
+                <p class="text-gray-400 font-light max-w-md mb-10 text-lg">Architectural interior design for those who understand that space dictates the quality of life.</p>
+                <a href="https://wa.me/2348135703348?text=Hello%20TORT%20Interior%20Design.%20I%20would%20like%20to%20schedule%20a%20spatial%20consultation." target="_blank" class="inline-flex items-center gap-4 text-sm uppercase tracking-[0.2em] font-bold text-white hover:text-terracotta transition-colors group magnetic-el">
+                    <span>Book Consultation</span>
+                    <span class="w-10 h-[1px] bg-white group-hover:bg-terracotta transition-colors group-hover:w-16"></span>
+                </a>
+            </div>
+            
+            <div class="md:col-span-3">
+                <h5 class="text-terracotta uppercase tracking-[0.2em] text-xs mb-8 font-bold">Studio</h5>
+                <ul class="space-y-4 text-gray-400 font-light text-sm">
+                    <li>Ketu / Ikeja</li>
+                    <li>Lagos, Nigeria</li>
+                    <li><a href="tel:+2348135703348" class="hover:text-white transition-colors">+234 813 570 3348</a></li>
+                </ul>
+            </div>
+
+            <div class="md:col-span-3">
+                <h5 class="text-terracotta uppercase tracking-[0.2em] text-xs mb-8 font-bold">Socials</h5>
+                <ul class="space-y-4 text-gray-400 font-light text-sm">
+                    <li><a href="#" class="hover:text-white transition-colors">Instagram</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Pinterest</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between">
+            <p class="text-gray-600 font-light text-xs tracking-widest uppercase mb-4 md:mb-0">&copy; 2026 TORT Interior Design.</p>
+            <a href="https://junestudios.com" class="font-serif italic text-sm tracking-wide text-gray-500 hover:text-white transition-colors duration-300 magnetic-el">
+                Imagined by junestudios
+            </a>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Action -->
+    <a href="https://wa.me/2348135703348?text=Hello%20TORT.%20I%20have%20an%20interior%20design%20project." target="_blank" class="fixed bottom-8 right-8 w-14 h-14 bg-terracotta text-white rounded-full flex items-center justify-center z-50 hover:scale-110 transition-transform duration-300 shadow-2xl magnetic-el group">
+        <svg class="w-7 h-7 group-hover:rotate-12 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 0C5.383 0 0 5.383 0 12.031c0 2.124.553 4.195 1.604 6.012L.268 24l6.104-1.604A11.96 11.96 0 0012.031 24c6.648 0 12.031-5.383 12.031-12.031S18.679 0 12.031 0zm0 21.996c-1.802 0-3.568-.484-5.116-1.402l-.367-.217-3.804.997 1.018-3.71-.238-.378A9.966 9.966 0 012.004 12.03c0-5.534 4.502-10.036 10.036-10.036 5.534 0 10.036 4.502 10.036 10.036 0 5.534-4.502 10.036-10.036 10.036zm5.503-7.525c-.302-.15-1.785-.882-2.062-.983-.277-.101-.48-.15-.682.15-.202.302-.783.983-.96 1.185-.176.202-.353.226-.655.076-.302-.15-1.275-.47-2.428-1.5-8.97-8.02-1.255-.98-1.457-1.332-.202-.353-.021-.544.13-.695.136-.136.302-.353.453-.53.15-.176.202-.302.302-.504.101-.202.05-.378-.025-.53-.076-.15-.682-1.644-.935-2.25-.246-.593-.496-.513-.682-.523-.176-.008-.378-.008-.58-.008-.202 0-.53.076-.807.378-.277.302-1.058 1.033-1.058 2.518 0 1.485 1.083 2.92 1.234 3.122.15.202 2.128 3.253 5.155 4.557 2.222.956 2.65.78 3.128.73.48-.05 1.547-.632 1.762-1.242.214-.61.214-1.135.15-1.242-.064-.108-.24-.16-.542-.31z"/></svg>
+    </a>
+</body>
+                  </html>

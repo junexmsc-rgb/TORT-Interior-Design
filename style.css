@@ -1,0 +1,31 @@
+/* style.css - TORT Spatial Architecture */
+
+body {
+    overscroll-behavior: none;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #EFECE6; }
+::-webkit-scrollbar-thumb { background: #121212; }
+::-webkit-scrollbar-thumb:hover { background: #C17767; }
+
+/* The Architectural Cursor */
+.arch-cursor {
+    width: 8px; height: 8px;
+    background-color: #C17767;
+    position: fixed; pointer-events: none;
+    z-index: 9999; transform: translate(-50%, -50%);
+    transition: width 0.3s, height 0.3s, background-color 0.3s, border-radius 0.3s;
+    mix-blend-mode: exclusion;
+}
+.arch-cursor.hovered {
+    width: 60px; height: 60px;
+    background-color: transparent;
+    border: 1px solid #EFECE6;
+    border-radius: 50%;
+}
+
+/* Image Mask Reveals (The "Unveiling" effect) */
+.image-mask-reveal {
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
